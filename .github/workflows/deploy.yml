@@ -1,0 +1,13 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: rsync deployments
+        uses: contention/rsync-deployments@v1.0.0
